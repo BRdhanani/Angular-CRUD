@@ -1,0 +1,87 @@
+<!-- <h1>{{title | uppercase}}</h1>
+<h1>{{getTitle(title)}}</h1>
+<app-user-demo [title]=title (getTitle)="getTitle($event)"></app-user-demo>
+<button (click)="getTitle('clicked')">Click</button>
+<input type="text" #input (keyup)="getValue(input.value)" [value]=inputVal/>
+<input type="text" (keyup)="getValue($event.target.value)" />
+
+<h1 *ngIf="key == 1 then ifblock else elseblock"></h1>
+<ng-template #ifblock>
+  <h1>Key1</h1>
+</ng-template>
+<ng-template #elseblock>
+  <h1>Key2</h1>
+</ng-template>
+
+<ng-template [ngIf]="key == 1">
+  <h1>Key1</h1>
+</ng-template>
+<ng-template [ngIf]="key == 2">
+  <h1>Key2</h1>
+</ng-template>
+
+<div [ngSwitch]="key">
+<p *ngSwitchCase="1">
+  Key1
+</p>
+<p *ngSwitchCase="2">
+  Key2
+</p>
+<p *ngSwitchDefault>
+  Key2
+</p>
+</div>
+
+<h2 *ngFor="let item of arr">{{item.id}}{{item.title}}</h2>
+
+<a [routerLink]="'user-data'">user</a>
+<a [routerLink]="'admin-data'">admin</a>
+<router-outlet></router-outlet> -->
+
+<!-- <table mat-table [dataSource]="tableData" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> id. </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef> title </th>
+    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="completed">
+    <th mat-header-cell *matHeaderCellDef> Weight </th>
+    <td mat-cell *matCellDef="let element"> {{element.completed}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table> -->
+
+<!-- <ul>
+  <li>
+    <a routerLink="admin/login">login</a>
+  </li>
+  <li>
+    <a routerLink="admin/list">list</a>
+  </li>
+</ul>
+<router-outlet></router-outlet> -->
+
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" ngModel>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password" ngModel>
+  </div>
+  <button type="submit">Submit</button>
+</form> -->
+
+<div>
+  <app-header></app-header>
+  <app-todos></app-todos>
+</div>

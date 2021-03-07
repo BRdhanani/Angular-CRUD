@@ -1,0 +1,4 @@
+<mat-list-item [class.complete]="todo?.completed">
+    <mat-checkbox [checked]="todo.completed" (change)="onToggle(todo)">{{ todo.title }}</mat-checkbox>
+    <button (click)="onDelete(todo)">x</button>
+</mat-list-item>
